@@ -36,17 +36,23 @@ SearchPyPI is a Python script designed to quickly search and open multiple PyPI 
 Execute the script in your terminal or command prompt, passing the desired search term as an argument:
 
 ```bash
-python3 searchpypi.py <search term>
+python3 searchpypi.py <search term> [--tabs NUM_TABS]
 ```
 
-Replace `<search term>` with the keyword you want to search for on PyPI.
+Replace `<search term>` with the keyword you want to search for on PyPI. You can also specify the number of browser tabs to open with the `--tabs` option. If not specified, the default value is 5.
+
+To see all available options, you can use the `--help` option:
+
+```bash
+python3 searchpypi.py --help
+```
 
 ## Example
 
-To search for packages related to "web scraping":
+To search for packages related to "web scraping" and open 10 tabs:
 
 ```bash
-python3 searchpypi.py web scraping
+python3 searchpypi.py web scraping --tabs 10
 ```
 
 ## Contributing
