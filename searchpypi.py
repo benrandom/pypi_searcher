@@ -11,7 +11,7 @@ def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Opens several search results from PyPI.')
     parser.add_argument('search_term', metavar='search_term', type=str, nargs='+', help='The term to search on PyPI')
-    parser.add_argument('-n', '--tabs', type=int, default=5, help='Number of browser tabs to open (default: 5)')
+    parser.add_argument('-t','--tabs', type=int, default=5, help='Number of browser tabs to open (default: 5)')
     args = parser.parse_args()
 
     search_term = ' '.join(args.search_term)
